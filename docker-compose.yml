@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    jest:
+        container_name: jest
+        build: .
+        volumes: 
+         - ./:/usr/src/app
+        ports:
+         - 5000:5000
